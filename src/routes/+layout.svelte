@@ -14,7 +14,7 @@
 	</div>
 </header>
 <div class="h-screen bg-gray-100">
-	<main class="max-w-3xl mx-auto bg-white py-16 h-full">
+	<main class="max-w-3xl mx-auto bg-white py-14 h-full">
 		<slot />
 	</main>
 </div>

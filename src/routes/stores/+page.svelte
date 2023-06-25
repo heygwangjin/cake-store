@@ -1,4 +1,6 @@
 <script>
+	import RightCircle from '~icons/icon-park-solid/right-c';
+
 	const stores = [
 		{ id: 1, name: '가게1', description: '가게1입니다.' },
 		{ id: 2, name: '가게2', description: '가게2입니다.' },
@@ -17,10 +19,13 @@
 			<a
 				data-sveltekit-reload
 				href="/stores/{store.id}"
-				class="w-full bg-green-400 h-48 rounded-md shadow-lg p-4"
+				class="w-full bg-green-400 h-48 rounded-md shadow-lg p-4 flex flex-col justify-between"
 			>
 				<div class="text-xl font-bold">{store.name}</div>
 				<div class="text-sm">{store.description}</div>
+				<div class="flex justify-end">
+					<RightCircle class="w-6 h-6" />
+				</div>
 			</a>
 		{/each}
 	</div>
